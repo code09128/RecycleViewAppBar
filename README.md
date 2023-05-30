@@ -70,3 +70,27 @@ AppBarLayout scroll use demo
         tools:itemCount="10">
     </androidx.recyclerview.widget.RecyclerView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+--------------------------------------------------------------------------------------------------------------------------
+
+/**控制設定的頁面動作*/
+private fun initSetView() {
+    //計算滑動距離監聽
+    appbar.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { appBarLayout, verticalOffset ->
+    Log.d("verticalOffset", verticalOffset.toString())
+    Log.d("verticalOffset totalScrollRange", appBarLayout.totalScrollRange.toString())
+
+    when {
+        //收合狀態 (abs)絕對值
+        abs(verticalOffset) >= appBarLayout.totalScrollRange -> {
+            toolBar_text.visibility = View.VISIBLE
+        }
+        //展開狀態
+        verticalOffset == 0 -> {
+            toolBar_text.visibility = View.GONE
+            toolBar_text.text = "$92,527"
+        }
+   }
+   })
+}
+
