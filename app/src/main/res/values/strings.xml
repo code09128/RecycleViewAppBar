@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RecycleViewAppBar</string>
+
+    <!--item-->
+    <string name="dollar">元</string>
+    <string name="typeCreditCard">信用卡</string>
+    <string name="typeMobile">行動支付</string>
+    <string name="typeIPASS">一卡通</string>
+    <string name="sales">銷售</string>
+</resources>
