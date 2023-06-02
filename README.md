@@ -1,6 +1,7 @@
-# RecycleViewAppBar
+## RecycleViewAppBar
 AppBarLayout scroll use demo
 
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -70,9 +71,9 @@ AppBarLayout scroll use demo
         tools:itemCount="10">
     </androidx.recyclerview.widget.RecyclerView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
+```
 --------------------------------------------------------------------------------------------------------------------------
-
+```kotlin
 /**控制設定的頁面動作*/
 private fun initSetView() {
     //計算滑動距離監聽
@@ -93,4 +94,4 @@ private fun initSetView() {
    }
    })
 }
-
+```
